@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: darkslategray;
+    color: #ffffff;
+}
+
+.stripe {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+.selfimage {
+    position: relative;
+    top: 15%;
+    left: 0px;
+    height: 149px;
+    background-position: top;
+    border-radius: 40%;
+}
+
+
+header h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 35px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: lightgray;
+}
+
+a {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+
+
+
+
+header nav ul li {
+    display: inline-flex;
+    margin-left: 40px;
+}
+
+section {
+    display: flex;
+    margin-top: 70px;
+}
+
+section h1 {
+    flex: 0 0 150px;
+}
+
+content.work{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+content.work .work-1{
+    flex: 0 0 100%;
+}
+
+content.work .works{
+    flex: 0 0 48%;
+}
+
+
+
+section content {
+    position: relative;
+    width: 85%;
+    float: right;
+    border-left: solid black; 
+    padding-left: 50px;
+}
+
+.work-1 h2{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(96, 96, 146);
+    padding: 15px;
+}
+
+img.surfreport {
+    width: 100%;
+}
+
+.works {
+    position: relative ; 
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 3%;
+
+}
+
+.works h2 {
+    position: absolute;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(96, 96, 146);
+    padding: 15px;
+}
+
+.works img {
+    width: 100%;
+    margin-right: 20px;
+    height: 180px;
+}
+
+.fotter a {
+    position: relative;
+    margin-left: 50px;
+    display: inline-block;
+    color: rgb(83, 83, 221);
+}
+
+@media screen and (max-width: 768px) {
+    content.work .works { 
+        flex: 0 0 100%
+    } 
+    .work-1 h2 {
+        font-size: 10px;
+    }
+    
+}
+
+
